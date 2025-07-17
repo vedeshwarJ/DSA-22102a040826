@@ -11,6 +11,6 @@ class sumofnaturals{
     public static int Sum(int n,int[] dp){
         if(n<=1) return n;
         if(dp[n]!=-1) return dp[n];
-        return n+Sum(n-1,dp);
+        return dp[n]=n+Sum(n-1,dp);
     }
 }
