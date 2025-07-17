@@ -11,6 +11,6 @@ class factorialDP{
     public static int fact(int n,int[] dp){
         if(n<=1) return n;
         if(dp[n]!=-1) return dp[n];
-        return n*fact(n-1,dp);
+        return dp[n]=n*fact(n-1,dp);
     }
 }
