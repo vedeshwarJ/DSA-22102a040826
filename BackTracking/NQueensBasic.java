@@ -2,17 +2,14 @@ import java.util.*;
 class NQueensBasic{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        int n=8;
+        int n=sc.nextInt();
         int[][] board=new int[n][n];
         boolean flag=true;
-        board[0][0]=1;
-        board[1][4]=1;
-        board[2][7]=1;
-        board[3][5]=1;
-        board[4][2]=1;
-        board[5][6]=1;
-        board[6][1]=1;
-        board[7][3]=1;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                board[i][j]=sc.nextInt();
+            }
+        }
         for(int i=1;i<n;i++){
             for(int j=0;j<n;j++){
                 if(board[i][j]==1){
@@ -39,7 +36,7 @@ class NQueensBasic{
                 }
             }
         
-        System.out.println(flag);
+        System.out.println((flag)? "Valid Board" :"invalid Board");
         sc.close();
     }
 }
