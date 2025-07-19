@@ -2,9 +2,11 @@ import java.util.*;
 class NQueensBasic{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of the board");
         int n=sc.nextInt();
         int[][] board=new int[n][n];
         boolean flag=true;
+        System.out.println("Enter the elements in the board");
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 board[i][j]=sc.nextInt();
